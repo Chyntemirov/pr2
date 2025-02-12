@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Попутчики</title>
+  <link rel="stylesheet" href="./st.css">
+</head>
+<body>
+
+  <header>
+  <ul>
+    <li>багыттар</li>
+    <li>Кооз жайлар</li>
+    <li>жатакана</li>
+    <li>карта</li>
+  </ul>
+  </header>
+
+  <!-- Форма поиска -->
+  <section class="search-section">
+    <!-- <h2>Сапар табуу</h2> -->
+    <form id="searchForm">
+      <label for="from">Кайдан:</label>
+      <input type="text" id="from" placeholder="Кетуучу жай" required>
+
+      <label for="to">Кайда:</label>
+      <input type="text" id="to" placeholder="Келуучу жай" required>
+
+      <label for="date">Убакыт:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Издоо</button>
+    </form>
+  </section>
+
+  <!-- Список поездок -->
+  <section class="rides-section">
+    <h2>Бар багыттар</h2>
+    <div id="ridesList">
+      <!-- Здесь будут отображаться поездки -->
+    </div>
+  </section>
+
+  <script src="./sc.js"></script>
+
+</body>
+</html>
